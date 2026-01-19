@@ -38,6 +38,17 @@
 	--color-secondary-900: oklch(30% 0.1 30);
 	--color-secondary-950: oklch(20% 0.11 30);
 
-	--font-body: var(--font-family), var(--font-fallback);
-	--font-display: var(--font-body);
+	--font-body: "Inter", sans-serif;
+	--font-display: "Inter", sans-serif;
+    --font-handwriting: "Caveat", cursive;
 }
+
+@layer base {
+    html {
+        font-family: var(--font-body);
+    }
+}
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&display=swap');
+
